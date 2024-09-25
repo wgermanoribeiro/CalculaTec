@@ -43,7 +43,7 @@ public class CalculadoraActivity extends Activity {
         btnSeparador.setText(separador);
 
         //Uso da fonte digital
-        final Typeface fonteDigital = Typeface.createFromAsset(this.getAssets(), "digital-7.ttf");
+        final Typeface fonteDigital = Typeface.createFromAsset(this.getAssets(), "digital-dream.fat-narrow.ttf");
         txtVisor.setTypeface(fonteDigital);
 
         txtVisor.setOnClickListener(new View.OnClickListener() {
