@@ -1,12 +1,10 @@
 package com.germanoribeiro.calculatec;
 
 import android.app.Activity;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -42,21 +40,21 @@ public class CalculadoraActivity extends Activity {
         Button btnSeparador = (Button)findViewById(R.id.buttonVirgula);
         btnSeparador.setText(separador);
 
-        //Uso da fonte digital
-        final Typeface fonteDigital = Typeface.createFromAsset(this.getAssets(), "digital-dream.fat-narrow.ttf");
-        txtVisor.setTypeface(fonteDigital);
-
-        txtVisor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (txtVisor.getTypeface().equals(fonteDigital)){
-                    txtVisor.setTypeface(Typeface.DEFAULT);
-                } else {
-                    txtVisor.setTypeface(fonteDigital);
-                }
-            }
-        });
-        Toast.makeText(this, "Toque no visor para alterar sua fonte", Toast.LENGTH_LONG).show();
+//        //Uso da fonte digital
+//        final Typeface fonteDigital = Typeface.createFromAsset(this.getAssets(), "digital-7.ttf");
+//        txtVisor.setTypeface(fonteDigital);
+//
+//        txtVisor.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (txtVisor.getTypeface().equals(fonteDigital)){
+//                    txtVisor.setTypeface(Typeface.DEFAULT);
+//                } else {
+//                    txtVisor.setTypeface(fonteDigital);
+//                }
+//            }
+//        });
+//        Toast.makeText(this, "Toque no visor para alterar sua fonte", Toast.LENGTH_LONG).show();
     }
     public void onClickNumeros(View v){
         Button botaoTocado = (Button) v;
