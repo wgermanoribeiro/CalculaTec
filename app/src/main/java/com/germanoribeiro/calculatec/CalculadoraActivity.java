@@ -94,6 +94,12 @@ public class CalculadoraActivity extends Activity {
             usuarioEstaDigitandoUmNumero = false;
             separadorDecimalFoiDigitado = false;
         }
+
+        // Adicionar o operador à caixa de texto
+//        String textoNoVisor = txtVisor.getText().toString();
+//        if (!operacao.equals(separador)) {
+//            txtVisor.setText(textoNoVisor + " " + operacao + " ");
+//        }
     }
     public void onClickMemoria(View v){
         Button botaoTocado = (Button) v;
