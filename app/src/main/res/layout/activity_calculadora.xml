@@ -236,7 +236,7 @@
             android:textSize="@dimen/tamanho_texto_botoes" />
 
         <Button
-            android:id="@+id/buttonZero"
+            android:id="@+id/buttonZerin"
             style="@style/estiloBotoesNumeros"
             android:layout_width="0dp"
             android:layout_height="match_parent"
